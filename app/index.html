@@ -8,13 +8,13 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-route.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <base href="/app/">
 </head>
 <body>
     <ul class="menu">
-        <li><a href="#/view1">view1</a></li>
-        <li><a href="#/view2">view2</a></li>
+        <li><a href="view1">view1</a></li>
+        <li><a href="view2">view2</a></li>
     </ul>
-    <ng-view></ng-view>
-        
+    <div ng-view></div>
 </body>
 </html>
