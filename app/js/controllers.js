@@ -7,11 +7,6 @@ angular.module('myApp.controllers', []).controller('Controller1', function($scop
         });
     }
 });
-
-angular.module('myApp.controllers').controller('Controller0', function($scope, $state){
-    $state.go('/');
-});
-
 angular.module('myApp.controllers').controller('Controller2', function ($scope, $stateParams, names) {
     $scope.firstname=$stateParams.firstname;
     $scope.lastname=$stateParams.lastname;

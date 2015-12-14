@@ -3,11 +3,6 @@ angular.module('myApp', ['myApp.controllers', 'ui.router' ]);
 
 angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$locationProvider){ 
     $stateProvider
-        .state('/', {
-            url: '/',
-            controller:'Controller0',
-            templateUrl:'/app/index.html'
-        })
         .state('view1',{
             url: '/view1',
             controller:'Controller1',
@@ -25,6 +20,6 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$locat
         });
         
     $locationProvider.html5Mode(true);
-    /*$urlRouterProvider.otherwise('/view1'); */
+    $urlRouterProvider.otherwise('/view1'); 
         
 });
