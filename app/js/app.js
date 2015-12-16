@@ -8,7 +8,8 @@ angular.module(
     'spBlogger.directives',
     'spBlogger.filters',
     'ui.router',
-    'spBlogger.services'
+    'spBlogger.services',
+    'spBlogger.admin'
   ]
 );
 
