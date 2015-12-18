@@ -8,6 +8,7 @@ angular.module(
     'spBlogger.directives',
     'spBlogger.filters',
     'ui.router',
+    'ngResource',
     'spBlogger.services',
     'spBlogger.admin'
   ]
