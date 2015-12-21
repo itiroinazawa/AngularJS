@@ -18,7 +18,7 @@ angular.module('spBlogger.admin.controllers').controller('AdminController',['$sc
     $state.go('admin'); 
 }]);
 
-angular.module('spBlogger.admin.controllers').controller('PostUpdateController'['$scope','Post','$stateParams','$state',function($scope,Post,$stateParams,$state){
+angular.module('spBlogger.admin.controllers').controller('PostUpdateController', ['$scope','Post','$stateParams','$state',function($scope,Post,$stateParams,$state){
     $scope.post=Post.get({id:$stateParams.id}); //Obtain the Post
     $scope.buttonText="Update"; //Set initial label for button
     $scope.updatePost=function(){

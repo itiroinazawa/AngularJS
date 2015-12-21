@@ -18,7 +18,7 @@ angular.module('spBlogger.admin').config(['$stateProvider', '$locationProvider',
         .state('login',{
             url:'/login',
             controller:'LoginController',
-            templateUrl:'modules/admin/views/login.html'
+            templateUrl:'app/modules/admin/views/login.html'
         })
         .state('admin', {
             url: '/admin',

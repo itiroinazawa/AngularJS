@@ -4,7 +4,7 @@ angular.module('spBlogger.posts.controllers', []).controller('PostController',['
     $scope.posts=Post.query(); //obtain all the posts
 }]);
     
-angular.module('spBlogger.posts.controllers').controller('PostDetailsController'['$stateParams','$state','$scope','Post',function($stateParams,$state,$scope,Post){
+angular.module('spBlogger.posts.controllers').controller('PostDetailsController',['$stateParams','$state','$scope','Post',function($stateParams,$state,$scope,Post){
     $scope.closePost=function(){
         $state.go('allPosts');
     };
