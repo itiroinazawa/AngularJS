@@ -3,6 +3,7 @@
 angular.module(
   'spBlogger',
   [
+    'ngCookies',
     'spBlogger.posts',
     'spBlogger.controllers',
     'spBlogger.directives',

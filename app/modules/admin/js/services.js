@@ -10,4 +10,4 @@ angular.module('spBlogger.admin.services',[]).factory('Post', ['$resource', 'API
     this.showPopup=function(message){
         return $window.confirm(message);   
     }
-}]).value('API_ENDPOINT', 'http://spblogger-sitepointdemos.rhcloud.com/api/posts/:id');
+}]).value('API_ENDPOINT', 'http://localhost:8080/api/posts/:id');

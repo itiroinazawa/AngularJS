@@ -3,6 +3,7 @@
 angular.module(
   'spBlogger.admin',
   [
+    'ngCookies',
     'spBlogger.admin.controllers',
     'spBlogger.admin.directives',
     'spBlogger.admin.services',
@@ -12,11 +13,15 @@ angular.module(
 );
 
 angular.module('spBlogger.admin').config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
-    
+  
     $stateProvider
+        .state('login',{
+            url:'/login',
+            controller:'LoginController',
+            templateUrl:'modules/admin/views/login.html'
+        })
         .state('admin', {
             url: '/admin',
-            abstract: true,
             controller: 'AdminController',
             templateUrl: 'app/modules/admin/views/admin-home.html'
         })
@@ -35,5 +40,10 @@ angular.module('spBlogger.admin').config(['$stateProvider', '$locationProvider',
             controller: 'PostListController',
             templateUrl: 'app/modules/admin/views/admin-all-posts.html' 
         });
-    $locationProvider.html5Mode(true);
+    
+    $locationProvider.html5Mode(
+    {
+      enabled: true,
+      requireBase: false
+    });
 }]);
